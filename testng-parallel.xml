@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Tests Suite" parallel="tests" thread-count="2">
+
+    <test name="Geometry Suite">
+        <classes>
+            <class name="com.example.GeometryCalculatorTest"/>
+        </classes>
+    </test>
+
+    <test name="Currency Suite">
+        <classes>
+            <class name="com.example.CurrencyConverterTest"/>
+        </classes>
+    </test>
+
+</suite>

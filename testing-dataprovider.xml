@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DataProvider Tests Suite">
+
+    <!-- Тест 1: Геометрия с DataProvider -->
+    <test name="Geometry DataProvider Tests">
+        <parameter name="environment" value="test"/>
+        <groups>
+            <run>
+                <include name="data-provider"/>
+                <include name="geometry"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.GeometryCalculatorTest">
+                <!-- Можно указать конкретные методы -->
+                <methods>
+                    <include name="testConeCalculationsWithDataProvider"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Тест 2: Валюты с DataProvider -->
+    <test name="Currency DataProvider Tests">
+        <parameter name="environment" value="test"/>
+        <groups>
+            <run>
+                <include name="data-provider"/>
+                <include name="currency"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.CurrencyConverterTest">
+                <methods>
+                    <include name="testCurrencyConversionsWithDataProvider"/>
+                    <include name="testConversionLossWithDataProvider"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

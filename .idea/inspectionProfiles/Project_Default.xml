@@ -1,0 +1,20 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="groupsTestNG" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="groups">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="geometry" />
+            <item index="1" class="java.lang.String" itemvalue="fast" />
+            <item index="2" class="java.lang.String" itemvalue="data-provider" />
+            <item index="3" class="java.lang.String" itemvalue="boundary" />
+            <item index="4" class="java.lang.String" itemvalue="exceptions" />
+            <item index="5" class="java.lang.String" itemvalue="currency" />
+            <item index="6" class="java.lang.String" itemvalue="smoke" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

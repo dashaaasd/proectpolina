@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Grouped Tests Suite" parallel="false">
+
+    <!-- Тест 1: Геометрия -->
+    <test name="Geometry Tests">
+        <groups>
+            <run>
+                <include name="geometry"/>  <!-- Только группа geometry -->
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.GeometryCalculatorTest"/>
+        </classes>
+    </test>
+
+    <!-- Тест 2: Валюты -->
+    <test name="Currency Tests">
+        <groups>
+            <run>
+                <include name="currency"/>  <!-- Только группа currency -->
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.CurrencyConverterTest"/>
+        </classes>
+    </test>
+
+    <!-- Тест 3: Исключения -->
+    <test name="Exception Tests">
+        <groups>
+            <run>
+                <include name="exceptions"/>  <!-- Только группа exceptions -->
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.GeometryCalculatorTest"/>
+            <class name="com.example.CurrencyConverterTest"/>
+        </classes>
+    </test>
+
+</suite>
