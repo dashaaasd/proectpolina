@@ -19,7 +19,7 @@ public class GeometryCalculator {
 
     public double calculateTruncatedConeVolume(double R, double r, double h) {
         validateConeParameters(R, r, h);
-        return (1.0/2.0) * Math.PI * h * (R*R + R*r + r*r);
+        return (1.0/3.0) * Math.PI * h * (R*R + R*r + r*r);
         //Поля, вот это разкомментируй для 6 задания, а строчку  выше наоборот закоменти, ну либо 3.0 поменяй на 2.0.
         //return (1.0/2.0) * Math.PI * h * (R*R + R*r + r*r); // ОШИБКА: 1/2 вместо 1/3
     }

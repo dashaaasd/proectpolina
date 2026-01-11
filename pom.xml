@@ -23,11 +23,20 @@
             <version>7.9.0</version>
             <scope>test</scope>
         </dependency>
-        <!-- Для устранения предупреждения SLF4J -->
+
+        <!-- ОСНОВНАЯ SLF4J зависимость  -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.9</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Реализация SLF4J -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.36</version>
+            <version>2.0.9</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
